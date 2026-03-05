@@ -61,16 +61,34 @@ src/
 ## 🚀 시작하기 (Getting Started)
 
 ### 1. 환경 변수 설정 (.env)
-\`\`\`text
-VITE_API_URL=http://ecpsystem.site:8080
-VITE_GITHUB_TOKEN=your_token_here
-\`\`\`
+루트 폴더에 `.env` 파일을 생성하고 아래 변수를 설정하세요.
+```text
+VITE_API_URL=[http://ecpsystem.site:8080](http://ecpsystem.site:8080)
+VITE_GITHUB_TOKEN=your_personal_access_token_here
+```
 
 ### 2. 설치 및 실행
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
+```
 
 ---
+
+## 🆘 Troubleshooting (에러 발생 시 조치 방법)
+
+### Q1. `npm install` 중 에러가 발생합니다.
+* **해결:** 아래 명령어를 순서대로 입력하여 클린 설치를 진행하세요.
+  ```bash
+  rm -rf node_modules package-lock.json
+  npm cache clean --force
+  npm install
+  ```
+
+### Q2. 화면이 백색(White Screen)으로 나오고 API 호출이 안 됩니다.
+* **해결:** 루트 폴더에 `.env` 파일이 있는지, `VITE_API_URL` 주소가 정확한지 확인하세요.
+
+### Q3. "Vite command not found" 에러가 뜹니다.
+* **해결:** `npm install`을 다시 실행하거나, `npx vite` 명령어로 실행해 보세요.
+* 
 본 문서는 ECP SYSTEM 프론트엔드 기술 명세서입니다.
