@@ -132,7 +132,7 @@ const DevStatusPage = () => {
     setRepoLoading(true);
     try {
       const owner = "jinhoking"; 
-      const token = "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"; // ⚠️ 꼭 새로 발급받으세요!
+      const token = import.meta.env.VITE_GITHUB_TOKEN || "";; // ⚠️ 꼭 새로 발급받으세요!
 
       const res = await axios.get(`https://api.github.com/users/${owner}/repos`, {
         params: {
