@@ -1,4 +1,4 @@
-# 🛡️ ECP SYSTEM - Frontend Technical Specification
+# 🏢 ECP SYSTEM - Frontend Technical Specification
 
 사내 통합 관리 시스템(Enterprise Control Platform)의 프론트엔드는 **React 18**과 **Vite**를 기반으로 구축되었으며, 사용자 경험(UX) 최적화와 효율적인 상태 관리를 최우선으로 설계되었습니다.
 
